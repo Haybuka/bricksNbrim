@@ -1,0 +1,7 @@
+.hyphen {
+  @apply bg-black w-36 h-2 inline-block mr-4;
+}
+
+.banner_grid {
+  @apply grid grid-cols-12 gap-3 h-full w-full p-4;
+}
