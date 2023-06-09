@@ -2,8 +2,32 @@
   @apply bg-black rounded-md w-20 md:w-36 h-1 md:h-2 inline-block mr-4;
 }
 .banner {
-  @apply md:h-[600px] bg-gray-400 md:flex items-center md:p-5 md:flex-row-reverse;
+  @apply lg:h-[600px] bg-white lg:flex items-center lg:p-5 md:flex-row-reverse;
 }
 .banner_grid {
-  @apply md:grid grid-cols-12 gap-3 h-full w-full p-4;
+  @apply lg:grid grid-cols-12 gap-3 h-full w-full p-4;
+}
+
+.grid_one {
+  @apply h-full md:h-auto col-span-6 bg-gray-100 row-span-2;
+  background-image: url('/banner/grid_one.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid_two {
+  @apply h-[280px] w-full md:h-auto col-span-6 bg-gray-100;
+  background-image: url('/banner/grid_two.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid_three {
+  @apply h-[280px] w-full md:h-auto col-span-6 bg-gray-100;
+  background-image: url('/banner/grid_three.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

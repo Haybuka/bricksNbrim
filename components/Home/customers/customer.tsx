@@ -14,7 +14,7 @@ const Customers = () => {
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis,
         libero.
       </p>
-      <aside className="md:px-[100px] bg-blue-950 px-6">
+      <aside className="md:px-[100px] px-6">
         <CustomerCard />
       </aside>
     </section>

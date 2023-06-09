@@ -75,12 +75,12 @@ const CustomerCard = () => {
                 ? cls(
                     styles.card,
                     'md:bg-white md:text-black',
-                    'bg-white text-black'
+                    'bg-white text-black shadow-md'
                   )
                 : cls(
                     styles.card,
                     'md:text-black md:bg-transparent',
-                    'bg-white text-black'
+                    'bg-white text-black shadow-md'
                   )
             }
           >

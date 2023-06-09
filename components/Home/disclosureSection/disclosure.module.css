@@ -1,0 +1,7 @@
+.disclosure {
+  @apply md:h-[600px] bg-[#f1e7e6] md:flex py-6 px-2 md:py-0 justify-around items-center md:px-[30px] lg:px-[50px] my-10;
+
+  background-image: url('/steps.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}

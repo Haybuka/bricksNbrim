@@ -2,6 +2,9 @@ import React from 'react';
 import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 const FeaturedCard = () => {
   const cards = [1, 2, 3, 4, 5, 6];
 
@@ -11,7 +14,7 @@ const FeaturedCard = () => {
       slidesPerView={3}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper: any) => console.log(swiper)}
-      className="my-8"
+      className="my-8 mySwiper"
       pagination={{
         clickable: true,
       }}
@@ -48,6 +51,7 @@ const FeaturedCard = () => {
               </p>
             </aside>
           </article>
+          <div className="my-12"></div>
         </SwiperSlide>
       ))}
     </Swiper>

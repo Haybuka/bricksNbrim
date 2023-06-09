@@ -8,8 +8,8 @@ const Mileage = () => {
   ];
   return (
     <section className={styles.mileage}>
-      <aside className="hidden md:block w-[400px] bg-gray-200 h-[400px]"></aside>
-      <article className="md:w-[600px] px-2 md:px-0">
+      <aside className=" md:block w-full md:w-[400px] bg-gray-200 h-[400px]"></aside>
+      <article className="md:w-[600px] my-10 md:my-0 md:px-0 md:mx-3">
         <h4 className="text-2xl font-semibold">
           What makes us different from others
         </h4>
@@ -21,9 +21,9 @@ const Mileage = () => {
           consectetur, totam harum nemo similique eligendi, a illo. Quae
           doloribus, ea non hic harum iure a eligendi cum deleniti sint vel!
         </p>
-        <section className="flex mt-3">
+        <section className="flex md:mt-3">
           {ratings.map((rate, id) => (
-            <article key={id} className="ml-2">
+            <article key={id} className="mr-10 md:mr-2">
               <h5 className="text-2xl font-semibold">{rate.rating}</h5>
               <p>
                 <span className="block">{rate.title}</span>

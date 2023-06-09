@@ -15,7 +15,7 @@ const Footer = () => {
         <Section heading="Support" list={support} />
         <Section heading="Contact us" list={contact} />
       </div>
-      <aside className="flex justify-center border-t-2 pt-6 md:my-2">
+      <aside className="flex justify-center border-t-2 pt-6 md:mt-10">
         <p>&copy; 2023; Bricks and Brim</p>
       </aside>
     </footer>

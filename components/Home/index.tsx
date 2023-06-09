@@ -4,7 +4,7 @@ import Mileage from './mileage/mileage';
 import Featured from './featured/featured';
 import Explore from './explore/explore';
 import Customers from './customers/customer';
-import DisclosureSection from '../disclosureSection/disclosure';
+import DisclosureSection from './disclosureSection/disclosure';
 
 const Home = () => {
   return (

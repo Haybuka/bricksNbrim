@@ -1,3 +1,7 @@
 .harmburger {
   @apply block md:hidden;
 }
+
+.nav {
+  @apply md:flex md:shadow-sm justify-between items-center py-4 px-2 md:px-6 relative;
+}

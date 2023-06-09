@@ -7,13 +7,13 @@ const Banner = () => {
   return (
     <section className={cls(styles.banner)}>
       <aside className={cls(styles.banner_grid, 'hidden')}>
-        <div className="h-full md:h-auto col-span-6 bg-yellow-400 row-span-2"></div>
-        <div className="h-[280px] w-full md:h-auto col-span-6 bg-red-400"></div>
-        <div className=" h-[280px] w-full md:h-auto col-span-6 bg-red-400"></div>
+        <div className={cls(styles.grid_one)}></div>
+        <div className={cls(styles.grid_two)}></div>
+        <div className={cls(styles.grid_three)}></div>
       </aside>
-      <aside className="block md:hidden h-[300px] bg-red-400 my-4"></aside>
-      <article className="py-6 px-3 md:px-[100px]">
-        <h2 className="uppercase font-semibold text-4xl md:text-6xl">
+      <aside className="block lg:hidden h-[300px] bg-red-400 my-4"></aside>
+      <article className="py-6 px-2 md:px-[40px] lg:px-[100px]">
+        <h2 className="uppercase font-semibold text-4xl md:text-5xl lg:text-6xl">
           <p>Find your</p>
           <p className="flex items-center">
             <span className={styles.hyphen}></span> Favorites
@@ -25,7 +25,7 @@ const Banner = () => {
           explicabo minima minus autem perspiciatis quo saepe consequatur
           aperiam sunt.
         </p>
-        <Button text="Get Quote" />
+        <Button text="Get Quote" propStyle="inline-block" />
       </article>
     </section>
   );

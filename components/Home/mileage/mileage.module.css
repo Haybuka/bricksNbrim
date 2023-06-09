@@ -1,5 +1,5 @@
 .mileage {
-  @apply h-[600px] bg-white flex justify-around items-center md:px-[50px];
+  @apply md:h-[600px] bg-white md:flex justify-between items-center p-2 md:p-0 md:px-[110px];
   /* background-image: url('/next.svg');
   background-position: center;
   background-size: 100px;
