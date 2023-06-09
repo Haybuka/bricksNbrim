@@ -7,7 +7,7 @@ interface Prop {
 
 const Section = ({ heading, list }: Prop) => {
   return (
-    <section>
+    <section className="my-10 md:my-0">
       <h3 className="font-semibold text-xl mb-3">{heading}</h3>
       <ul>
         {list.map((item, id) => (

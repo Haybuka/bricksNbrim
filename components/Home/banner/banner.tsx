@@ -4,9 +4,15 @@ import Image from 'next/image';
 import cls from 'classnames';
 const Banner = () => {
   return (
-    <section className="h-[600px] bg-gray-400 flex items-center p-5">
-      <article className="py-6 px-[100px]">
-        <h2 className="uppercase font-semibold text-6xl">
+    <section className={cls(styles.banner)}>
+      <aside className={cls(styles.banner_grid, 'hidden')}>
+        <div className="h-full md:h-auto col-span-6 bg-yellow-400 row-span-2"></div>
+        <div className="h-[280px] w-full md:h-auto col-span-6 bg-red-400"></div>
+        <div className=" h-[280px] w-full md:h-auto col-span-6 bg-red-400"></div>
+      </aside>
+      <aside className="block md:hidden h-[300px] bg-red-400 my-4"></aside>
+      <article className="py-6 px-3 md:px-[100px]">
+        <h2 className="uppercase font-semibold text-4xl md:text-6xl">
           <p>Find your</p>
           <p className="flex items-center">
             <span className={styles.hyphen}></span> Favorites
@@ -22,13 +28,6 @@ const Banner = () => {
           Get Quote
         </button>
       </article>
-      <aside className={cls(styles.banner_grid)}>
-        <div className=" col-span-6 bg-yellow-400 row-span-2">
-          {/* <Image */}
-        </div>
-        <div className=" col-span-6 bg-red-400"></div>
-        <div className=" col-span-6 bg-red-400"></div>
-      </aside>
     </section>
   );
 };
