@@ -3,6 +3,8 @@ import Banner from './banner/banner';
 import Mileage from './mileage/mileage';
 import Featured from './featured/featured';
 import Explore from './explore/explore';
+import Customers from '../customers/customer';
+import DisclosureComponent from './disclosure/disclosure';
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
         <Featured />
         <Explore />
       </div>
+      <Customers />
+      <DisclosureComponent />
     </div>
   );
 };

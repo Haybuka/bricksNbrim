@@ -1,0 +1,15 @@
+.card {
+  @apply rounded-lg relative border;
+}
+
+.card_img_div {
+  @apply h-[100px] w-[100px] rounded-full absolute -top-0 -translate-y-2/4  left-1/2 -translate-x-1/2 shadow-md bg-gray-300;
+}
+
+.card_body {
+  @apply p-2 text-center py-[30px];
+}
+
+.card_header {
+  @apply text-xl my-2 font-semibold;
+}
