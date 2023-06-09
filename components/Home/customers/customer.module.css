@@ -1,5 +1,5 @@
 .card {
-  @apply rounded-lg relative border;
+  @apply rounded-lg relative border hover:bg-white cursor-pointer;
 }
 
 .card_img_div {
@@ -12,4 +12,8 @@
 
 .card_header {
   @apply text-xl my-2 font-semibold;
+}
+
+.mobile_card {
+  @apply bg-white text-black;
 }

@@ -1,3 +1,3 @@
 .explore {
-  @apply h-[600px]  flex justify-between items-center;
+  @apply my-10 h-[600px] md:flex-row-reverse flex-row  md:flex justify-between items-center;
 }

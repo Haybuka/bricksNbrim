@@ -3,20 +3,21 @@ import Banner from './banner/banner';
 import Mileage from './mileage/mileage';
 import Featured from './featured/featured';
 import Explore from './explore/explore';
-import Customers from '../customers/customer';
-import DisclosureComponent from './disclosure/disclosure';
+import Customers from './customers/customer';
+import DisclosureSection from '../disclosureSection/disclosure';
 
 const Home = () => {
   return (
     <div>
       <Banner />
       <Mileage />
-      <div className="px-10 md:px-[110px] py-10">
+      <div className="px-6 md:px[80px] lg:px-[110px] py-10">
         <Featured />
         <Explore />
       </div>
+      <DisclosureSection />
+
       <Customers />
-      <DisclosureComponent />
     </div>
   );
 };

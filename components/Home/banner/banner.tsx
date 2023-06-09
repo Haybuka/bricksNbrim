@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './banner.module.css';
 import Image from 'next/image';
 import cls from 'classnames';
-import Button from '@/components/button/button';
+import Button from '@/utils/button/button';
 const Banner = () => {
   return (
     <section className={cls(styles.banner)}>

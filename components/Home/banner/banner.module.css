@@ -1,5 +1,5 @@
 .hyphen {
-  @apply bg-black w-20 md:w-36 h-1 md:h-2 inline-block mr-4;
+  @apply bg-black rounded-md w-20 md:w-36 h-1 md:h-2 inline-block mr-4;
 }
 .banner {
   @apply md:h-[600px] bg-gray-400 md:flex items-center md:p-5 md:flex-row-reverse;

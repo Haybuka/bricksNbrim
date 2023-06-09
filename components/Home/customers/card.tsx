@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import cls from 'classnames';
 import styles from './customer.module.css';
+import { Pagination } from 'swiper';
 
 const CustomerCard = () => {
-  const cards = [1, 2, 3, 4, 5, 6];
   const [activeIndex, setActiveIndex] = useState<number>(1);
   const reviews = [
     {
@@ -43,7 +43,28 @@ const CustomerCard = () => {
       spaceBetween={50}
       slidesPerView={3}
       onSlideChange={(swiper: any) => setActiveIndex(swiper.activeIndex + 1)}
-      // onSwiper={(swiper: any) => console.log(swiper)}
+      pagination={{
+        clickable: true,
+      }}
+      modules={[Pagination]}
+      breakpoints={{
+        300: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      }}
       className="my-8"
     >
       {reviews.map((review, id) => (
@@ -51,8 +72,16 @@ const CustomerCard = () => {
           <article
             className={
               activeIndex == id
-                ? cls(styles.card, 'bg-white text-black')
-                : cls(styles.card, 'text-white')
+                ? cls(
+                    styles.card,
+                    'md:bg-white md:text-black',
+                    'bg-white text-black'
+                  )
+                : cls(
+                    styles.card,
+                    'md:text-black md:bg-transparent',
+                    'bg-white text-black'
+                  )
             }
           >
             <div className={cls(styles.card_img_div)}></div>

@@ -15,9 +15,9 @@ const Navbar = () => {
         <h3 className="uppercase font-bold text-2xl flex justify-between items-center">
           <p> {`B'N'Brim`}</p>
           <div className={cls(styles.harmburger)}>
-            <span className="bg-black h-[5px] w-10 block"></span>
-            <span className="bg-black h-[5px] w-10 block my-1"></span>
-            <span className="bg-black h-[5px] w-10 block"></span>
+            <span className="bg-black h-[5px] rounded-sm w-9 block"></span>
+            <span className="bg-black h-[5px] rounded-sm w-9 block my-1"></span>
+            <span className="bg-black h-[5px] rounded-sm w-9 block"></span>
           </div>
         </h3>
         <ul className="block md:flex">
