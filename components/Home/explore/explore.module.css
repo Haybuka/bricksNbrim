@@ -1,0 +1,3 @@
+.explore {
+  @apply h-[600px]  flex justify-between items-center;
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './banner.module.css';
 import Image from 'next/image';
 import cls from 'classnames';
+import Button from '@/components/button/button';
 const Banner = () => {
   return (
     <section className={cls(styles.banner)}>
@@ -24,9 +25,7 @@ const Banner = () => {
           explicabo minima minus autem perspiciatis quo saepe consequatur
           aperiam sunt.
         </p>
-        <button className="bg-black text-white py-2 px-6 my-4">
-          Get Quote
-        </button>
+        <Button text="Get Quote" />
       </article>
     </section>
   );
