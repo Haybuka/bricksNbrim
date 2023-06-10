@@ -14,7 +14,7 @@
 
 .mileage_bg {
   @apply md:block w-full md:w-[400px] bg-gray-200 h-[400px];
-  background-image: url('/mileage/mileage.jpg');
+  background-image: url('/home/mileage/mileage.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

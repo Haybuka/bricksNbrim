@@ -4,7 +4,7 @@
 
 .explore_bg {
   @apply w-full relative md:block md:w-[400px] bg-gray-200 h-[400px];
-  background-image: url('/explore/explore.jpg');
+  background-image: url('/home/explore/explore.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

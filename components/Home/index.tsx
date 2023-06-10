@@ -8,7 +8,7 @@ import DisclosureSection from './disclosureSection/disclosure';
 
 const Home = () => {
   return (
-    <div>
+    <div className="mt-20">
       <Banner />
       <Mileage />
       <div className="px-6 md:px[80px] lg:px-[110px] py-10">
