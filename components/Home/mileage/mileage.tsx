@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './mileage.module.css';
 const Mileage = () => {
   const ratings = [
-    { rating: 50, title: 'lorem', text: 'lorem ipsum' },
+    { rating: 50, title: 'lorem', text: 'ipsumate' },
     { rating: 950, title: 'Projects', text: 'Completed' },
     { rating: '100+', title: 'awards', text: 'received' },
   ];
@@ -23,7 +23,7 @@ const Mileage = () => {
             doloribus, ea non hic harum iure a eligendi cum deleniti sint vel!
           </p>
         </section>
-        <section className="flex md:mt-3 bg-white px-4">
+        <section className="flex md:mt-3 bg-white px-4 py-3">
           {ratings.map((rate, id) => (
             <article key={id} className="mr-10 md:mr-14">
               <h5 className="text-2xl font-semibold">{rate.rating}</h5>

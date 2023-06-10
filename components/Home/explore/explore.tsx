@@ -14,7 +14,7 @@ const Explore = () => {
           sapiente animi quidem voluptates maxime doloribus earum suscipit,
           consectetur, totam harum nemo similique eligendi, a illo. Quae
           doloribus, ea non hic harum iure a eligendi cum deleniti sint vel!
-          consectetur, totam harum nemo similique eligendi, a illo. Quae
+          consectetur, totam harum nemo similique el`igendi, a illo. Quae
           doloribus, ea non hic harum iure a eligendi cum deleniti sint vel!
         </p>
         <Button text="Explore now" propStyle="inline-block" />

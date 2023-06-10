@@ -1,5 +1,5 @@
 .explore {
-  @apply my-10 h-[600px] md:flex-row-reverse flex-row  md:flex justify-between items-center;
+  @apply my-2 md:h-[600px] md:flex-row-reverse flex-row  md:flex justify-between items-center;
 }
 
 .explore_bg {

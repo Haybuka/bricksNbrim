@@ -33,7 +33,7 @@
 }
 
 .mobile {
-  @apply block lg:hidden h-[360px] bg-red-400 my-4;
+  @apply block lg:hidden h-[360px] bg-gray-200 my-4;
   background-image: url('/home/banner/banner.jpg');
   background-position: center;
   background-repeat: no-repeat;
