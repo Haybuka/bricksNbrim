@@ -1,10 +1,10 @@
 import React from 'react';
-import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import styles from './featured.module.css';
+import { Pagination } from 'swiper';
+import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import Image from 'next/image';
 
 const FeaturedCard = () => {
   const cards = [
@@ -52,7 +52,7 @@ const FeaturedCard = () => {
       }}
       modules={[Pagination]}
       breakpoints={{
-        400: {
+        300: {
           slidesPerView: 1,
           spaceBetween: 10,
         },

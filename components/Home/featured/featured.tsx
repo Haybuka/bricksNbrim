@@ -1,5 +1,5 @@
 import React from 'react';
-import 'swiper/css';
+
 import FeaturedCard from './card';
 const Featured = () => {
   return (
