@@ -1,2 +1,16 @@
 .card {
 }
+
+.card_img {
+  @apply w-full h-full aspect-[3/2] relative;
+}
+
+.card_img::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  content: '';
+}

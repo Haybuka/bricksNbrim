@@ -1,7 +1,7 @@
 import React from 'react';
 import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import styles from './featured.module.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import Image from 'next/image';
@@ -11,32 +11,32 @@ const FeaturedCard = () => {
     {
       title: 'Minimalism',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim illo dolorem amet in ducimus dolor sit repudiandae adipisci eligendi.',
-      img: '/featured/minimalism.jpg',
+      img: '/Home/featured/minimalism.jpg',
     },
     {
       title: 'Mid-century modern',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim illo dolorem amet in ducimus dolor sit repudiandae adipisci eligendi.',
-      img: '/featured/modern.jpg',
+      img: '/Home/featured/modern.jpg',
     },
     {
       title: 'Art Deco',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim illo dolorem amet in ducimus dolor sit repudiandae adipisci eligendi.',
-      img: '/featured/art_deco.jpg',
+      img: '/Home/featured/art_deco.jpg',
     },
     {
       title: 'Scandinavian Design',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim illo dolorem amet in ducimus dolor sit repudiandae adipisci eligendi.',
-      img: '/featured/room.jpg',
+      img: '/Home/featured/room.jpg',
     },
     {
       title: 'Japandi',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim illo dolorem amet in ducimus dolor sit repudiandae adipisci eligendi.',
-      img: '/featured/minimalism.jpg',
+      img: '/Home/featured/minimalism.jpg',
     },
     {
       title: 'Modern Art',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim illo dolorem amet in ducimus dolor sit repudiandae adipisci eligendi.',
-      img: '/featured/modern_art.jpg',
+      img: '/Home/featured/modern_art.jpg',
     },
   ];
 
@@ -72,14 +72,14 @@ const FeaturedCard = () => {
     >
       {cards.map((card, id) => (
         <SwiperSlide className="" key={id}>
-          <article className="h-full w-full rounded-lg">
-            <div className="h-[220px] w-full shadow-md bg-gray-300">
+          <article className="h-full w-full overflow-hidden rounded-lg">
+            <div className="h-[220px] shadow-md bg-gray-300">
               <Image
                 src={card.img}
                 alt={card.title}
                 width={200}
                 height={200}
-                className="w-full h-full"
+                className={styles.card_img}
               />
             </div>
             <aside className="p-2">

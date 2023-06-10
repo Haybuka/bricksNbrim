@@ -12,31 +12,31 @@ const CustomerCard = () => {
       name: 'Joan Mathew',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim illo dolorem amet in ducimus dolor sit repudiandae adipisci eligendi.',
       rating: 4,
-      img: '/customers/userOne.jpg',
+      img: '/Home/customers/userOne.jpg',
     },
     {
       name: 'JAnderson McDonals',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim illo dolorem amet in ducimus dolor sit repudiandae adipisci eligendi.',
       rating: 3,
-      img: '/customers/userTwo.jpg',
+      img: '/Home/customers/userTwo.jpg',
     },
     {
       name: 'Angela Rose',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Voluptate enim illo dolorem amet in ducimus dolor sitrepudiandae adipisci eligendi.',
       rating: 4,
-      img: '/customers/userThree.jpg',
+      img: '/Home/customers/userThree.jpg',
     },
     {
       name: 'JAnderson McDonals',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim illo dolorem amet in ducimus dolor sit repudiandae adipisci eligendi.',
       rating: 3,
-      img: '/customers/userFour.jpg',
+      img: '/Home/customers/userFour.jpg',
     },
     {
       name: 'JAnderson McDonals',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim illo dolorem amet in ducimus dolor sit repudiandae adipisci eligendi.',
       rating: 3,
-      img: '/customers/userFive.jpg',
+      img: '/Home/customers/userFive.jpg',
     },
   ];
   return (
@@ -97,7 +97,7 @@ const CustomerCard = () => {
             <aside className={cls(styles.card_body)}>
               <p className="my-10">
                 <Image
-                  src="/home/customers/quotes.png"
+                  src="/Home/customers/quotes.png"
                   height={30}
                   width={30}
                   alt="quotes"
