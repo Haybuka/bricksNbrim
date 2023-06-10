@@ -1,7 +1,4 @@
 import React from 'react';
-import styles from './featured.module.css';
-import cls from 'classnames';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import FeaturedCard from './card';
 const Featured = () => {

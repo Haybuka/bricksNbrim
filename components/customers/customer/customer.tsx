@@ -1,6 +1,6 @@
 import React from 'react';
 import 'swiper/css';
-import CustomerCard from './customer/card';
+import CustomerCard from './card';
 const Customers = () => {
   return (
     <section className="my-10">

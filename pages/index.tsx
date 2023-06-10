@@ -5,9 +5,5 @@ import Home from '@/components/Home';
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Index() {
-  return (
-    <main>
-      <Home />
-    </main>
-  );
+  return <Home />;
 }
