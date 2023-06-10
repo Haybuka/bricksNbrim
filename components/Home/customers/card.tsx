@@ -95,7 +95,16 @@ const CustomerCard = () => {
               />
             </div>
             <aside className={cls(styles.card_body)}>
-              <p className="my-10">{review.text}</p>
+              <p className="my-10">
+                <Image
+                  src="/home/customers/quotes.png"
+                  height={30}
+                  width={30}
+                  alt="quotes"
+                  className="aspect-[3/2] mx-auto"
+                />
+                <span className="block">{review.text}</span>
+              </p>
 
               <h4 className={cls(styles.card_header)}>{review.name}</h4>
             </aside>

@@ -9,7 +9,7 @@ interface Props {
 
 const Button = ({ text, propStyle }: Props) => {
   return (
-    <Link href="/" className={cls(styles.btn, styles.btn_default, propStyle)}>
+    <Link href="/" className={cls(styles.btn, styles.btn_bricks, propStyle)}>
       {text}
     </Link>
   );

@@ -20,7 +20,13 @@ const Footer = () => {
         <Section heading="Support" list={support} />
         <Section heading="Contact us" list={contact} />
         <section className="mb-6 md:mb-0">
-          <h3 className="uppercase font-bold text-2xl">Bricks Brim</h3>
+          <aside className="flex items-center text-black font-bold">
+            <p className="text-5xl">B</p>
+            <div>
+              <span className="block -my-2">RICKS</span>
+              <span className="block -my-2">RIM</span>
+            </div>
+          </aside>
           <p className="my-3">
             <span className="block">509 S Glenoaks Bloulevard</span>
             <span className="block">Burbank, California.</span>

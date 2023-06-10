@@ -17,7 +17,16 @@ const Navbar = () => {
     <header>
       <nav className={styles.nav}>
         <h3 className="uppercase font-bold text-2xl flex justify-between items-center">
-          <p> {`B'N'Brim`}</p>
+          <aside className="flex items-center text-orange-700 ">
+            <p className="text-5xl">B</p>
+            <div className="relative">
+              <span className="block text-lg -my-3">RICKS</span>
+              <span className="block text-lg -my-3">RIM</span>
+              <span className="absolute right-0 rotate-12 text-sm top-1/2 -translate-y-1/2 text-[#612006]">
+                {`'n'`}
+              </span>
+            </div>
+          </aside>
           <div
             className={cls(styles.harmburger)}
             onClick={() => setNavState((previous) => !previous)}

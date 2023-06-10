@@ -5,3 +5,7 @@
 .btn_default {
   @apply bg-black text-white;
 }
+
+.btn_bricks {
+  @apply bg-orange-700 text-white;
+}
