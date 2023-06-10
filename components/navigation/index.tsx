@@ -8,9 +8,9 @@ import DesktopNav from './desktop';
 const Navbar = () => {
   const navigation = [
     { route: '/', name: 'Home' },
-    { route: 'blog', name: 'Blog' },
     { route: 'services', name: 'Services' },
-    { route: 'review', name: 'Review' },
+    { route: 'gallery', name: 'Gallery' },
+    { route: 'blog', name: 'Blog' },
   ];
   const [navState, setNavState] = useState(false);
   return (
