@@ -1,5 +1,5 @@
 .harmburger {
-  @apply block md:hidden;
+  @apply block md:hidden cursor-pointer;
 }
 
 .nav {

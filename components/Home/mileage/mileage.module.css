@@ -1,11 +1,6 @@
 .mileage {
-  @apply md:h-[600px] bg-white md:flex justify-between items-center p-2 md:p-0 md:px-[110px];
-  /* background-image: url('/next.svg');
-  background-position: center;
-  background-size: 100px;
-  /* background-repeat: no-repeat; */
+  @apply md:h-[600px] bg-white md:flex justify-between items-center p-2 md:p-0  md:px-[30px] lg:px-[110px];
 
-  /* background-repeat: no-repeat; */
   background: radial-gradient(circle, #7b7a86 10%, transparent 11%),
     radial-gradient(circle at bottom left, #7b7a86 5%, transparent 6%),
     radial-gradient(circle at bottom right, #7b7a86 5%, transparent 6%),
@@ -13,6 +8,14 @@
     radial-gradient(circle at top right, #7b7a86 5%, transparent 6%);
   background-size: 2em 2em;
   background-color: #ffffff;
-  opacity: 0.7;
+  /* opacity: 0.7; */
   background-attachment: fixed;
+}
+
+.mileage_bg {
+  @apply md:block w-full md:w-[400px] bg-gray-200 h-[400px];
+  background-image: url('/mileage/mileage.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

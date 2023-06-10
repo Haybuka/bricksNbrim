@@ -13,7 +13,7 @@ const Closure = ({ closure }: Props) => {
         <section>
           <Disclosure.Button className="flex w-full items-center justify-between rounded-lg px-2 py-4 text-left text-lg text-black focus:outline-none focus-visible:ring focus-visible:ring-opacity-75">
             <p className="flex items-center">
-              <span className="w-8 h-8 bg-black rounded-full inline-block mr-2"></span>
+              <span className="w-6 h-6 bg-black rounded-full inline-block mr-2"></span>
               <span>{closure.text}</span>
             </p>
             <ChevronUpIcon

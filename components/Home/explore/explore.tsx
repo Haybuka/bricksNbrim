@@ -4,7 +4,7 @@ import Button from '@/utils/button/button';
 const Explore = () => {
   return (
     <section className={styles.explore}>
-      <aside className="w-full md:block md:w-[400px] bg-gray-200 h-[400px]"></aside>
+      <aside className={styles.explore_bg}></aside>
       <article className="w-full my-4 md:my-0 md:w-[400px] px-2 md:px-0">
         <h4 className="text-2xl font-semibold capitalize">
           The most trusted real estate website

@@ -5,3 +5,12 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+.disclosure_img {
+  @apply md:block my-4 md:my-0 md:w-[380px] lg:w-[400px] bg-gray-300 h-[400px];
+
+  background-image: url('/disclosure/disclosure.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

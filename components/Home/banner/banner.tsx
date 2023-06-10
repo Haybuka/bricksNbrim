@@ -11,8 +11,8 @@ const Banner = () => {
         <div className={cls(styles.grid_two)}></div>
         <div className={cls(styles.grid_three)}></div>
       </aside>
-      <aside className="block lg:hidden h-[300px] bg-red-400 my-4"></aside>
-      <article className="py-6 px-2 md:px-[40px] lg:px-[100px]">
+      <aside className={styles.mobile}></aside>
+      <article className="py-6 px-2 md:px-[30px] lg:px-[100px]">
         <h2 className="uppercase font-semibold text-4xl md:text-5xl lg:text-6xl">
           <p>Find your</p>
           <p className="flex items-center">
@@ -20,7 +20,7 @@ const Banner = () => {
           </p>
           <p>real estate</p>
         </h2>
-        <p className="w-auto md:w-[380px] my-4">
+        <p className="w-auto lg:w-[380px] my-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo
           explicabo minima minus autem perspiciatis quo saepe consequatur
           aperiam sunt.

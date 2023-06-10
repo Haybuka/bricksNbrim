@@ -31,3 +31,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.mobile {
+  @apply block lg:hidden h-[360px] bg-red-400 my-4;
+  background-image: url('/banner/banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

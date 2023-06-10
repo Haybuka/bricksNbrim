@@ -8,8 +8,8 @@ const Mileage = () => {
   ];
   return (
     <section className={styles.mileage}>
-      <aside className=" md:block w-full md:w-[400px] bg-gray-200 h-[400px]"></aside>
-      <article className="md:w-[600px] my-10 md:my-0 md:px-0 md:mx-3">
+      <aside className={styles.mileage_bg}></aside>
+      <article className="md:w-[480px] lg:w-[600px] my-10 md:my-0 md:px-0 md:mx-3">
         <h4 className="text-2xl font-semibold">
           What makes us different from others
         </h4>

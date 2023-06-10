@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import cls from 'classnames';
 import styles from './customer.module.css';
 import { Pagination } from 'swiper';
+import Image from 'next/image';
 
 const CustomerCard = () => {
   const [activeIndex, setActiveIndex] = useState<number>(1);
@@ -11,31 +12,31 @@ const CustomerCard = () => {
       name: 'Joan Mathew',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim illo dolorem amet in ducimus dolor sit repudiandae adipisci eligendi.',
       rating: 4,
-      img: '',
+      img: '/customers/userOne.jpg',
     },
     {
       name: 'JAnderson McDonals',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim illo dolorem amet in ducimus dolor sit repudiandae adipisci eligendi.',
       rating: 3,
-      img: '',
+      img: '/customers/userTwo.jpg',
     },
     {
       name: 'Angela Rose',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.Voluptate enim illo dolorem amet in ducimus dolor sitrepudiandae adipisci eligendi.',
       rating: 4,
-      img: '',
+      img: '/customers/userThree.jpg',
     },
     {
       name: 'JAnderson McDonals',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim illo dolorem amet in ducimus dolor sit repudiandae adipisci eligendi.',
       rating: 3,
-      img: '',
+      img: '/customers/userFour.jpg',
     },
     {
       name: 'JAnderson McDonals',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate enim illo dolorem amet in ducimus dolor sit repudiandae adipisci eligendi.',
       rating: 3,
-      img: '',
+      img: '/customers/userFive.jpg',
     },
   ];
   return (
@@ -84,7 +85,15 @@ const CustomerCard = () => {
                   )
             }
           >
-            <div className={cls(styles.card_img_div)}></div>
+            <div className={cls(styles.card_img_div)}>
+              <Image
+                src={review.img}
+                alt={review.text}
+                width={200}
+                height={200}
+                className="w-full h-full aspect-square rounded-full"
+              />
+            </div>
             <aside className={cls(styles.card_body)}>
               <p className="my-10">{review.text}</p>
 
