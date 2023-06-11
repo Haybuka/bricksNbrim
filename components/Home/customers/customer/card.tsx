@@ -3,7 +3,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import cls from 'classnames';
 import styles from './customer.module.css';
 import { Pagination } from 'swiper';
+import SwiperCore, { Autoplay } from 'swiper';
+SwiperCore.use([Autoplay]);
+
 import Image from 'next/image';
+import 'swiper/css/autoplay';
 
 const CustomerCard = () => {
   const [activeIndex, setActiveIndex] = useState<number>(1);
@@ -46,6 +50,10 @@ const CustomerCard = () => {
       onSlideChange={(swiper: any) => setActiveIndex(swiper.activeIndex + 1)}
       pagination={{
         clickable: true,
+      }}
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
       }}
       modules={[Pagination]}
       breakpoints={{

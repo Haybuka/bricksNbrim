@@ -2,9 +2,13 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import styles from './featured.module.css';
 import { Pagination } from 'swiper';
+import SwiperCore, { Autoplay } from 'swiper';
+
+SwiperCore.use([Autoplay]);
 import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 
 const FeaturedCard = () => {
   const cards = [
@@ -47,6 +51,10 @@ const FeaturedCard = () => {
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper: any) => console.log(swiper)}
       className="my-8 mySwiper"
+      autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
       pagination={{
         clickable: true,
       }}
