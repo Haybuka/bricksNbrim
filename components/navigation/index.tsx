@@ -4,6 +4,7 @@ import cls from 'classnames';
 import MobileNav from './mobile';
 import DesktopNav from './desktop';
 import { NavContext } from '@/context/navcontext/navContext';
+
 const Navbar = () => {
   const navigation = [
     { route: '/', name: 'Home' },
