@@ -14,7 +14,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="py-6 px-4 ">
+    <footer className="py-6 px-4 bg-white text-black">
       <div className="md:flex justify-between items-start flex-row-reverse">
         <Section heading="About us" list={about} />
         <Section heading="Support" list={support} />

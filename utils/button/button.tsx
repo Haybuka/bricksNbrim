@@ -5,11 +5,15 @@ import Link from 'next/link';
 interface Props {
   text: string;
   propStyle?: string;
+  href?: string;
 }
 
-const Button = ({ text, propStyle }: Props) => {
+const Button = ({ text, propStyle, href }: Props) => {
   return (
-    <Link href="/" className={cls(styles.btn, styles.btn_bricks, propStyle)}>
+    <Link
+      href={`${href ? href : '/'}`}
+      className={cls(styles.btn, styles.btn_bricks, propStyle)}
+    >
       {text}
     </Link>
   );

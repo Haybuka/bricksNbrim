@@ -10,7 +10,7 @@ interface Props {
 const DesktopNav = ({ navigate }: Props) => {
   return (
     <>
-      <ul className={cls('hidden md:flex items-center text-center')}>
+      <ul className={cls('hidden md:flex items-center text-center text-black')}>
         {navigate.map((item, id) => (
           <Link
             href={item.route}
@@ -22,6 +22,7 @@ const DesktopNav = ({ navigate }: Props) => {
         ))}
         <Button
           text="Contact us"
+          href="contact"
           propStyle="md:ml-2 block md:inline-block hover:bg-white hover:text-black hover:shadow-md text-center"
         />
       </ul>

@@ -4,6 +4,7 @@ import cls from 'classnames';
 import MobileNav from './mobile';
 import DesktopNav from './desktop';
 import { NavContext } from '@/context/navcontext/navContext';
+import Link from 'next/link';
 
 const Navbar = () => {
   const navigation = [
@@ -23,7 +24,7 @@ const Navbar = () => {
         }
       >
         <h3 className="uppercase font-bold text-2xl flex justify-between items-center">
-          <aside className="flex items-center text-orange-700 ">
+          <Link href="/" className="flex items-center text-orange-700 ">
             <p className="text-5xl">B</p>
             <div className="relative">
               <span className="block text-lg -my-3">RICKS</span>
@@ -32,7 +33,7 @@ const Navbar = () => {
                 {`'n'`}
               </span>
             </div>
-          </aside>
+          </Link>
           <div className={cls(styles.harmburger)} onClick={handleNavState}>
             <span className="bg-black h-[5px] rounded-sm w-9 block"></span>
             <span className="bg-black h-[5px] rounded-sm w-9 block my-1"></span>
