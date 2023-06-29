@@ -7,7 +7,7 @@
 }
 
 .disclosure_img {
-  @apply md:block my-4 md:my-0 md:w-[360px] md:mr-2 lg:w-[400px] bg-gray-300 h-[400px];
+  @apply md:block my-4 md:my-0 rounded-lg md:w-[360px] md:mr-2 lg:w-[400px] bg-gray-300 h-[400px];
 
   background-image: url('/home/disclosure/disclosure.jpg');
   background-position: center;

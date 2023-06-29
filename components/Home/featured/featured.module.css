@@ -2,7 +2,7 @@
 }
 
 .card_img {
-  @apply w-full h-full aspect-[3/2] relative;
+  @apply w-full h-full aspect-[3/2] relative rounded-lg;
 }
 
 .card_img::after {

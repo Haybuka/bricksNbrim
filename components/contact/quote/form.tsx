@@ -1,47 +1,30 @@
 import React from 'react';
 import cls from 'classnames';
 import Button from '@/utils/button/button';
-
+import styles from './quote.module.css';
 const Form = () => {
   return (
-    <form className=" my-4 shadow-md bg-white p-2  lg:px-5 w-full lg:w-[600px]">
-      <h3 className="uppercase text-xl lg:text-2xl">Get Quote</h3>
+    <form className=" my-4 lg:shadow-md bg-white p-2 rounded-lg lg:px-5 w-full lg:w-[600px]">
+      <h3 className="uppercase text-lg lg:text-2xl border-b-2 pb-3">
+        Get Quote
+      </h3>
       <label className="my-3">
-        <p className={cls('uppercase tracking-wider my-4')}>Name : </p>
-        <input
-          type="text"
-          className={cls(
-            'shadow-md border w-full p-3 rounded-lg focus:border-orange-700 outline-orange-700'
-          )}
-        />
+        <p className={cls(styles.label)}>Name : </p>
+        <input type="text" className={cls(styles.input)} />
       </label>
       <label className="my-3">
-        <p className={cls('uppercase tracking-wider my-4')}>Phone Number : </p>
-        <input
-          type="number"
-          className={cls(
-            'shadow-md border w-full p-3 rounded-lg focus:border-orange-700 outline-orange-700'
-          )}
-        />
+        <p className={cls(styles.label)}>Phone Number : </p>
+        <input type="number" className={cls(styles.input)} />
       </label>
       <label className="my-3">
-        <p className={cls('uppercase tracking-wider my-4')}>Email : </p>
-        <input
-          type="email"
-          className={cls(
-            'shadow-md border w-full p-3 rounded-lg focus:border-orange-700 outline-orange-700'
-          )}
-        />
+        <p className={cls(styles.label)}>Email : </p>
+        <input type="email" className={cls(styles.input)} />
       </label>
       <label className="my-3">
-        <p className={cls('uppercase tracking-wider my-4')}>Message : </p>
-        <textarea
-          className={cls(
-            'shadow-md border w-full p-3 rounded-lg focus:border-orange-700 outline-orange-700'
-          )}
-        />
+        <p className={cls(styles.label)}>Message : </p>
+        <textarea className={cls(styles.input)} />
       </label>
-      <Button text="Submit" propStyle="text-center block" />
+      <Button text="Submit" propStyle="text-center block " />
     </form>
   );
 };

@@ -16,7 +16,7 @@ const Banner = () => {
         <h2 className="uppercase font-semibold text-4xl md:text-5xl lg:text-6xl">
           <p>Find your</p>
           <p className="flex items-center">
-            <span className={styles.hyphen}></span> Favorites
+            <span className={styles.hyphen}></span> Favorite
           </p>
           <p>real estate</p>
         </h2>

@@ -14,9 +14,9 @@ const Explore = () => {
             alt="icon"
             width={28}
             height={28}
-            className="mx-1"
+            className="mx-1 rounded-xl"
           />
-          <div className="mx-2">
+          <div className=" mx-2">
             <span className="block -my-1">$2000</span>
             <span className="block -my-1">View Properties</span>
           </div>

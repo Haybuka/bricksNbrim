@@ -1,5 +1,5 @@
 .hyphen {
-  @apply bg-black rounded-md w-20 md:w-36 h-1 md:h-2 inline-block mr-4;
+  @apply bg-black rounded-md w-16 md:w-36 h-1 md:h-2 md:inline-block mr-4;
 }
 .banner {
   @apply lg:h-[600px] bg-white lg:flex items-center lg:p-5 md:flex-row-reverse;
@@ -9,7 +9,7 @@
 }
 
 .grid_one {
-  @apply h-full md:h-auto col-span-6 bg-gray-100 row-span-2;
+  @apply h-full md:h-auto col-span-6 bg-gray-100 row-span-2 lg:rounded-lg;
   background-image: url('/home/banner/grid_one.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
 }
 
 .grid_two {
-  @apply h-[280px] w-full md:h-auto col-span-6 bg-gray-100;
+  @apply h-[280px] w-full md:h-auto col-span-6 bg-gray-100 lg:rounded-lg;
   background-image: url('/home/banner/grid_two.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -25,7 +25,7 @@
 }
 
 .grid_three {
-  @apply h-[280px] w-full md:h-auto col-span-6 bg-gray-100;
+  @apply h-[280px] w-full md:h-auto col-span-6 bg-gray-100 lg:rounded-lg;
   background-image: url('/home/banner/grid_three.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@
 }
 
 .mobile {
-  @apply block lg:hidden h-[360px] bg-gray-200 my-4;
+  @apply block lg:hidden h-[360px] bg-gray-200 my-4 lg:rounded-lg;
   background-image: url('/home/banner/banner.jpg');
   background-position: center;
   background-repeat: no-repeat;
