@@ -1,8 +1,8 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import styles from './featured.module.css';
 import { Pagination } from 'swiper';
 import SwiperCore, { Autoplay } from 'swiper';
+import styles from './featured.module.css';
 
 SwiperCore.use([Autoplay]);
 import Image from 'next/image';
