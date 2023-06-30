@@ -76,6 +76,10 @@ const FeaturedCard = () => {
           slidesPerView: 3,
           spaceBetween: 50,
         },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
       }}
     >
       {cards.map((card, id) => (

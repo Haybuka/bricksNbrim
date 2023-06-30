@@ -65,6 +65,10 @@ const GSlider = ({ sliders, handleActiveIndex, activeIndex }: Props) => {
             slidesPerView: 3,
             spaceBetween: 50,
           },
+          1200: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
         }}
       >
         {sliders.map((view, id) => (
