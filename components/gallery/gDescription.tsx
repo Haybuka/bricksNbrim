@@ -17,7 +17,6 @@ const GDescription = ({ details }: Props) => {
 
       <p className=" leading-6 my-3">{details.text}</p>
 
-      {/* <p className="h-10 bg-gray-200 rounded-full my-6 w-[200px]">Get Quote</p> */}
       <Button text="Get Quote" propStyle="inline-block" />
     </article>
   );

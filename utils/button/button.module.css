@@ -1,5 +1,5 @@
 .btn {
-  @apply py-3 px-6 my-4 rounded-full;
+  @apply py-2 px-4 my-4 rounded-full;
 }
 
 .btn_default {
