@@ -9,7 +9,7 @@ import Link from 'next/link';
 const Navbar = () => {
   const navigation = [
     { route: '/', name: 'Home' },
-    { route: '/', name: 'Services' },
+    { route: 'services', name: 'Services' },
     { route: 'gallery', name: 'Gallery' },
     { route: '/', name: 'Blog' },
   ];
