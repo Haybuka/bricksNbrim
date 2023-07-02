@@ -11,8 +11,8 @@ const Index = () => {
         </h3>
       </section>
       <section className="md:flex">
-        <aside className="h-[450px] md:w-1/2 bg-red-400"></aside>
-        <article className="flex justify-center items-center md:w-1/2 px-[50px] text-center">
+        <aside className="h-[450px] md:w-1/2 bg-orange-700"></aside>
+        <article className="flex justify-center items-center md:w-1/2 py-[50px] md:py-0 px-[50px] text-center">
           <div>
             <h3 className="font-semibold text-xl">Title of section</h3>
             <p>
