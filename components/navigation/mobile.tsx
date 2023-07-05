@@ -13,9 +13,8 @@ export interface NavItems {
   name: string;
 }
 const MobileNav = ({ navigate }: Props) => {
-  const { isNavOpen } = useContext(NavContext);
+  const { isNavOpen, handleNavState } = useContext(NavContext);
 
-  console.log({ isNavOpen });
   return (
     <ul>
       {navigate.map((item, id) => (
@@ -23,11 +22,13 @@ const MobileNav = ({ navigate }: Props) => {
           href={item.route}
           className="block text-black my-4 md:my-0 md:mx-3"
           key={id}
+          onClick={handleNavState}
         >
           {item.name}
         </Link>
       ))}
       <Button
+        handleClick={handleNavState}
         text="Contact us"
         href="contact"
         propStyle="md:ml-2 block md:inline-block hover:bg-white hover:text-black hover:shadow-md text-center"

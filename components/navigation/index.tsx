@@ -7,14 +7,26 @@ import { NavContext } from '@/context/navcontext/navContext';
 import Link from 'next/link';
 
 const Navbar = () => {
-  const navigation = [
-    { route: '/', name: 'Home' },
-    { route: 'services', name: 'Services' },
-    { route: 'gallery', name: 'Gallery' },
-    { route: '/', name: 'Blog' },
-  ];
-
   const { isNavOpen, handleNavState } = useContext(NavContext);
+
+  const navigation = [
+    {
+      route: '/',
+      name: 'Home',
+    },
+    {
+      route: 'services',
+      name: 'Services',
+    },
+    {
+      route: 'gallery',
+      name: 'Gallery',
+    },
+    {
+      route: '/',
+      name: 'Blog',
+    },
+  ];
 
   return (
     <header>

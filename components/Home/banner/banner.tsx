@@ -25,7 +25,7 @@ const Banner = () => {
           explicabo minima minus autem perspiciatis quo saepe consequatur
           aperiam sunt.
         </p>
-        <Button text="Get Quote" propStyle="inline-block" />
+        <Button text="Get Quote" propStyle="inline-block" href="contact" />
       </article>
     </section>
   );

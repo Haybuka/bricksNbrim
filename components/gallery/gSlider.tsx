@@ -4,7 +4,6 @@ import { Pagination } from 'swiper';
 import SwiperCore, { Autoplay } from 'swiper';
 SwiperCore.use([Autoplay]);
 import 'swiper/css';
-// import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import Image from 'next/image';
 
@@ -39,7 +38,6 @@ const GSlider = ({ sliders, handleActiveIndex, activeIndex }: Props) => {
         onSlideChange={(swipe) => {
           handleActiveIndex(swipe.activeIndex);
         }}
-        onSwiper={(swiper: any) => console.log(swiper)}
         autoplay={{
           delay: 4000,
           disableOnInteraction: false,

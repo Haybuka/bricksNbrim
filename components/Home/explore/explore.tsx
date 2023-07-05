@@ -34,7 +34,7 @@ const Explore = () => {
           consectetur, totam harum nemo similique el`igendi, a illo. Quae
           doloribus, ea non hic harum iure a eligendi cum deleniti sint vel!
         </p>
-        <Button text="Explore now" propStyle="inline-block" />
+        <Button href="gallery" text="Explore now" propStyle="inline-block" />
       </article>
     </section>
   );

@@ -48,8 +48,6 @@ const FeaturedCard = () => {
     <Swiper
       spaceBetween={50}
       slidesPerView={3}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper: any) => console.log(swiper)}
       className="my-8 mySwiper"
       autoplay={{
         delay: 2500,
