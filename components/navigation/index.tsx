@@ -22,10 +22,10 @@ const Navbar = () => {
       route: 'gallery',
       name: 'Gallery',
     },
-    {
-      route: '/',
-      name: 'Blog',
-    },
+    // {
+    //   route: '/',
+    //   name: 'Blog',
+    // },
   ];
 
   return (
